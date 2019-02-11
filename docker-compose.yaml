@@ -1,0 +1,6 @@
+version: '2'
+services:
+  demo:
+    container_name: demo
+    build:
+      context: .

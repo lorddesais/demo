@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-docker build -t demo .
-docker run --name=demo -it --rm -p 8000:80 demo /bin/bash
+echo "Welcome in docker container with demo app!"
+echo "Run the app with 'php index.php <entity_type> <entity_id> <entity_relation>' e.g. 'php index.php user 1 post'"
+docker run -it demo /bin/bash

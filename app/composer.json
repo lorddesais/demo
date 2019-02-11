@@ -11,9 +11,10 @@
             "Cli\\" : "src/cli/",
             "Data\\" : "src/data/",
             "Di\\" : "src/di/",
-            "Exception\\" : "src/exception",
+            "Exception\\" : "src/exception/",
             "Log\\" : "src/log/",
-            "Test\\" : "src/test/"
+            "Test\\" : "src/test/",
+            "Data\\Generator\\" : "src/data/generator/"
         }
     }
 }
