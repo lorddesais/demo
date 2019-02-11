@@ -1,0 +1,6 @@
+.project
+.idea
+Thumbs.db
+app/vendor/*
+app/temp/*
+

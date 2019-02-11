@@ -1,0 +1,19 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Api\\" : "src/api/",
+            "Cli\\" : "src/cli/",
+            "Data\\" : "src/data/",
+            "Di\\" : "src/di/",
+            "Exception\\" : "src/exception",
+            "Log\\" : "src/log/",
+            "Test\\" : "src/test/"
+        }
+    }
+}
