@@ -15,6 +15,9 @@ class Writer
 
 	protected $generators = [];
 
+	/**
+	 * @var string
+	 */
 	protected $targetFolder;
 
 	public function __construct(HtmlGenerator $htmlGenerator, JsonGenerator $jsonGenerator, XmlGenerator $xmlGenerator)
@@ -44,7 +47,7 @@ class Writer
 		return $file;
 	}
 
-	public function getTargetFolder()
+	public function getTargetFolder() : string
 	{
 		if ($this->targetFolder)
 		{

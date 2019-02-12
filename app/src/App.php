@@ -5,6 +5,7 @@ use Di\Loader;
 use Log\Logger;
 use Cli\Parser;
 use Api\Fetcher;
+use Data\Writer;
 
 class App {
 
@@ -13,8 +14,14 @@ class App {
 	 */
 	protected $loader;
 
+	/**
+	 * @var Fetcher
+	 */
 	protected $apiFetcher;
 
+	/**
+	 * @var Writer
+	 */
 	protected $dataWriter;
 
 	public function __construct($argv)
@@ -24,54 +31,6 @@ class App {
 
 	public function run()
 	{
-//		$data = [
-//			"id"=>1,
-//			"name"=>"Lennne Graham",
-//			"username"=>"Bret",
-//			"email"=>"Sincere@april.biz",
-//			"address"=>
-//				[
-//					"street"=>"Kulas Light",
-//					"suite"=>"Apt. 556",
-//					"city"=>"Gwenborough",
-//					"zipcode"=>"92998-3874",
-//					"geo"=>
-//						[
-//							"lat"=>"-37.3159",
-//							"lng"=>"81.1496"
-//						]
-//				],
-//			"phone"=>"1-770-736-8031 x56442",
-//			"website"=>"hildegard.org",
-//			"company"=>
-//				["name" =>"Romaguera-Crona",
-//					"catchPhrase"=>"Multi-layered client-server neural-net",
-//					"bs"=>"harness real-time e-markets"
-//				]
-//		];
-//
-//		function write_xml( XMLWriter $xml, $data ) {
-//			foreach( $data as $key => $value ) {
-//				if( is_array( $value )) {
-//					$xml->startElement( $key );
-//					write_xml( $xml, $value );
-//					$xml->endElement( );
-//					continue;
-//				}
-//				$xml->writeElement( $key, $value );
-//			}
-//		}
-//
-//		$xml = new XmlWriter();
-//		$xml->openMemory();
-//		$xml->startDocument( '1.0', 'utf-8' );
-//		$xml->startElement( 'user') ;
-//
-//		write_xml( $xml, $data );
-//
-//		$xml->endElement();
-//		echo $xml->outputMemory( true );
-
 		try
 		{
 			$cliParser = $this->loader->getCliParser();

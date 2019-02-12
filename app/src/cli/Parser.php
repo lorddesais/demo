@@ -55,6 +55,10 @@ class Parser
 		return NULL;
 	}
 
+
+	/**
+	 * @throws CliParserException
+	 */
 	protected function validateArguments()
 	{
 		$arguments = $this->arguments;

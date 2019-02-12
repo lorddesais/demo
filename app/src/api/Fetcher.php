@@ -26,7 +26,7 @@ class Fetcher
 		);
 	}
 
-	protected function getResponseAsArray($response)
+	protected function getResponseAsArray($response) : ?array
 	{
 		if ($response && is_object($response))
 		{
